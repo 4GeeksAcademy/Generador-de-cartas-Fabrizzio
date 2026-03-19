@@ -1,5 +1,50 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  background: white;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+  font-family: Georgia, serif;
+}
+
+.top {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 40px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 40px;
+  transform: rotate(180deg);
+}
+
+.number {
+  text-align: center;
+  font-size: 80px;
+  line-height: 350px;
+}
+
+
+.heart, .diamond {
+  color: red;
+}
+
+.spade, .club {
+  color: black;
 }
